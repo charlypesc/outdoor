@@ -1,0 +1,696 @@
+@font-face {
+  font-family: hero;
+  src: url(../../fonts/Hero/Hero-Regular.ttf);
+}
+@font-face {
+  font-family: robo;
+  src: url(../../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: robot;
+  src: url(../../fonts/Roboto/Roboto-Thin.ttf);
+}
+
+$bgt:#d8d7d9;
+$bgtranslucido:rgba(black, 0.8);	
+$bgco : #faf9fa;
+$bgbu:#4fa6ce;
+$bgro:#faf9fa;
+$fontopaco:#abaaab;
+$bgbody:#262626;
+//especiales bootstrapp
+
+//corresponde al sistema de reserva
+
+body {
+	display: flex;
+	flex-direction: column;
+	background-color:black!important;
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	font-family:robot!important;
+	h2{
+		font-family: robo!important;
+		margin-left: 10px;
+		color: #e8edf0;		
+	}
+
+		nav{
+			i{
+				font-size:1.5rem;
+				&:hover{
+					color:#838283;
+				}
+				
+			}
+		.blk{
+			
+			background-color:orange;
+			
+		}
+		}
+
+		
+	
+	.cab_u{
+		display:flex;
+		flex-direction: row;
+		align-items: center;
+		background-color:#52abd5; 
+		i {
+			margin-left: 10px;
+			font-size: 0.8rem;
+			color: #e8edf0;
+
+
+		}
+	}
+	.slide_hostal{
+		display: flex;
+		flex-direction: row;
+		background-color: white;
+		height: 200px;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		i{
+			
+			font-size: 40px;
+			color: grey;
+
+		}
+	}
+	.wrap_hostal{
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		margin:auto;
+		// background-color:black;
+		h2{
+			font-family:arial!important;
+			color:darkgray;
+			font-size:1rem;
+			margin:1em;
+		}
+		.wrap_room{
+			display: flex;
+			flex-direction: row;
+			margin: 20px 0px 10px 0px;
+			font-family: robot;
+			background-color:white;
+			//  box-shadow:#333 1px 3px 6px;
+			 border-radius: 12px;
+			h2{
+				font-family: hero;
+				margin: 0;
+				color:darkslategray;
+			}
+			h4{
+					color:#838283;
+			}
+			p{
+				font-family: robot;
+				color:#838283;
+			}	
+			.room_foto{
+				display: flex;
+				width: 30%;
+				height: auto;
+				overflow: hidden;
+				border-radius: 12px 0px 0px 12px;
+				// background-color:#23262d;
+				align-items: center;
+				justify-content: center;
+				i{
+					color:grey;
+				}
+			}
+			.room_detail {
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+			height:auto;
+			// background-color: #faf9fa;
+			padding: 10px 10px;
+			
+			.room_noches_total {
+					display: flex;
+					width: 100%;
+					align-items: baseline;
+					h4{
+						font-size: 0.8rem;
+					}		
+					input{
+						border-style: none;
+						background: #faf9fa ;
+						font-family: robo;
+						margin-left: 4px;
+					}
+			}
+			
+
+				
+			}
+			.room_valor{
+				display: flex;
+				flex-direction: column;
+				background-color: #faf9fa;
+				width: 19%;
+				align-items: center;
+				justify-content: center;
+				h4{
+					margin-top: -10px;}
+				button{
+					background-color: #52abd5;
+					border-radius: 20px 20px;
+					height: 25px;
+					border-style:none;
+					font-family: robo;
+					font-size: 12px;
+					&:hover {
+						background-color: orange;
+						cursor: pointer;
+					}
+
+
+				}
+
+			}
+
+
+		}
+		.wrap_extra{
+			display: flex;
+			flex-direction: row;
+			margin-top: 20px;
+			font-family: robot;
+			background-color:#e8edf0;
+			 box-shadow:#333 1px 3px 6px;
+			 border-radius: 12px 12px 12px 12px;
+			h2{
+				font-family: hero;
+				margin: 0;
+				color:darkslategray;
+			}
+			h4{
+					color:#838283;
+			}
+			p{
+				font-family: robot;
+				color:#838283;
+			}	
+			.room_foto{
+				display: flex;
+				width: 30%;
+				height: auto;
+				padding:0.5rem;
+				// background-color:#23262d;
+				align-items: center;
+				justify-content: center;
+				overflow:hidden;
+				img{
+					width:30%;
+				}
+				video{
+					width:90%
+				}
+			}
+			.room_detail {
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+			height:auto;
+			// background-color: #faf9fa;
+			padding: 10px 10px;
+			
+			.room_noches_total {
+					display: flex;
+					width: 100%;
+					align-items: center;
+					h4{
+						font-size: 0.8rem;
+					}		
+					input{
+						border-style: none;
+						background: #faf9fa ;
+						font-family: robo;
+						margin-left: 4px;
+					}
+			}
+			
+
+				
+			}
+			.room_valor{
+				display: flex;
+				flex-direction: column;
+				// background-color: #faf9fa;
+				width: 19%;
+				align-items: center;
+				justify-content: center;
+				h4{
+					// margin-top: -10px;
+				}
+				button{
+					background-color: #52abd5;
+					border-radius: 20px 20px;
+					height: 25px;
+					border-style:none;
+					font-family: robo;
+					font-size: 12px;
+					&:hover {
+						background-color: orange;
+						cursor: pointer;
+					}
+
+
+				}
+				input{
+					border-radius:12px;
+					text-align:center;
+					border:1px solid darkgrey;
+					font-family:robo;
+					font-size:0.8rem;
+
+				}
+
+			}
+
+
+		}
+		.form_reserv{
+			label{
+				color:rgb(231, 231, 231);
+			}
+			
+		}
+	}
+	
+}
+
+.hostal{
+	display:flex;
+	position: relative;
+	z-index: 150;
+	width:100%;
+	transform:translateY(-120px);
+	
+	font-family: hero;
+	color: $bgbu;
+	background-color:rgba(black, 0.5);
+	padding: 1rem;
+	
+	
+
+	// background-color:green;]
+
+		.hostal_check{
+			display: flex;
+			color:$bgro;
+			flex-direction: row;
+			
+			margin-left: 3rem;
+			font-family:robot;
+			align-items:center;
+			p{
+				font-size: 1rem;
+				color: $bgro;
+			}
+			.check_in{
+					input{
+					
+					
+					flex-flow: row-reverse nowrap;
+					position: relative;
+					z-index: 100;
+					font-size: 1.5rem;
+					right: 18px;
+					color: $fontopaco!important;
+					background:rgba(black, 0.2);
+					border-radius: 12px;
+					}
+				}
+			.check_out{
+					input{
+
+					
+					flex-flow: row-reverse nowrap;
+					position: relative;
+					z-index: 100;
+					font-size: 1.5rem;
+					right: 18px;
+					color: $fontopaco!important;
+					background: white;
+					left: 2px;
+					background:rgba(black, 0.2);
+					border-radius: 12px;
+					
+					margin-bottom: 2px;
+					}
+				}
+
+				
+				.btn_ser{
+					display: inline-block;
+					height: 30px;
+					
+					margin-left: 15px;
+					background-color:rgba(black,0.7);
+					border-radius: 20px 20px;
+					border-style: 0.1em solid white;
+					
+					color: gray!important;
+					font-family: hero;
+					font-size: 1rem;
+
+					&:hover{
+						cursor: pointer;
+						background-color: orange;
+						border-style: none;
+						box-shadow: $bgtranslucido 1px 1px 10px 0px!important;
+				}
+
+
+			}	
+
+		}
+			
+
+	
+}
+
+
+
+.wrap_hostal_i{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin:auto;
+	margin-top:1px;
+	margin-bottom:10px;
+	box-shadow: 0px 0px 10px 1px #c3c3c3;
+	// background-color:black;
+	
+	h2{
+		font-family:arial!important;
+		color:darkgray;
+		font-size:1rem;
+		margin:1em;
+	}
+	.wrap_room{
+		display: flex;
+		flex-direction: row;
+		margin: 20px 0px 10px 0px;
+		font-family: robot;
+		background-color:white;
+		//  box-shadow:#333 1px 3px 6px;
+		 border-radius: 12px;
+		h2{
+			font-family: hero;
+			margin: 0;
+			color:darkslategray;
+		}
+		h4{
+				color:#838283;
+		}
+		p{
+			font-family: robot;
+			color:#838283;
+		}	
+		.room_foto{
+			display: flex;
+			width: 30%;
+			height: auto;
+			overflow: hidden;
+			border-radius: 12px 0px 0px 12px;
+			// background-color:#23262d;
+			align-items: center;
+			justify-content: center;
+			i{
+				color:grey;
+			}
+		}
+		.room_detail {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		height:auto;
+		// background-color: #faf9fa;
+		padding: 10px 10px;
+		
+		.room_noches_total {
+				display: flex;
+				width: 100%;
+				align-items: baseline;
+				h4{
+					font-size: 0.8rem;
+				}		
+				input{
+					border-style: none;
+					background: #faf9fa ;
+					font-family: robo;
+					margin-left: 4px;
+				}
+		}
+		
+
+			
+		}
+		.room_valor{
+			display: flex;
+			flex-direction: column;
+			background-color: #faf9fa;
+			width: 19%;
+			align-items: center;
+			justify-content: center;
+			h4{
+				margin-top: -10px;}
+			button{
+				background-color: #52abd5;
+				border-radius: 20px 20px;
+				height: 25px;
+				border-style:none;
+				font-family: robo;
+				font-size: 12px;
+				&:hover {
+					background-color: orange;
+					cursor: pointer;
+				}
+
+
+			}
+
+		}
+
+
+	}
+	.wrap_extra{
+		display: flex;
+		flex-direction: row;
+		margin-top: 20px;
+		font-family: robot;
+		background-color:#e8edf0;
+		 box-shadow:#333 1px 3px 6px;
+		 border-radius: 12px 12px 12px 12px;
+		h2{
+			font-family: hero;
+			margin: 0;
+			color:darkslategray;
+		}
+		h4{
+				color:#838283;
+		}
+		p{
+			font-family: robot;
+			color:#838283;
+		}	
+		.room_foto{
+			display: flex;
+			width: 30%;
+			height: auto;
+			padding:0.5rem;
+			// background-color:#23262d;
+			align-items: center;
+			justify-content: center;
+			overflow:hidden;
+			img{
+				width:30%;
+			}
+			video{
+				width:90%
+			}
+		}
+		.room_detail {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		height:auto;
+		// background-color: #faf9fa;
+		padding: 10px 10px;
+		
+		.room_noches_total {
+				display: flex;
+				width: 100%;
+				align-items: center;
+				h4{
+					font-size: 0.8rem;
+				}		
+				input{
+					border-style: none;
+					background: #faf9fa ;
+					font-family: robo;
+					margin-left: 4px;
+				}
+		}
+		
+
+			
+		}
+		.room_valor{
+			display: flex;
+			flex-direction: column;
+			// background-color: #faf9fa;
+			width: 19%;
+			align-items: center;
+			justify-content: center;
+			h4{
+				// margin-top: -10px;
+			}
+			button{
+				background-color: #52abd5;
+				border-radius: 20px 20px;
+				height: 25px;
+				border-style:none;
+				font-family: robo;
+				font-size: 12px;
+				&:hover {
+					background-color: orange;
+					cursor: pointer;
+				}
+
+
+			}
+			input{
+				border-radius:12px;
+				text-align:center;
+				border:1px solid darkgrey;
+				font-family:robo;
+				font-size:0.8rem;
+
+			}
+
+		}
+
+
+	}
+	.form_reserv{
+		label{
+			color:rgb(231, 231, 231);
+		}
+		
+	}
+	.make{
+		display:flex;
+		position:relative;
+		align-items:center;
+		// background:green;
+		// transform:translateY(-100px);
+		justify-content:center;
+		img{
+			width:10%;
+		}
+	}
+}
+.hostal_i{
+	display:flex;
+	position: relative;
+	z-index: 150;
+	width:100%;
+	transform:translateY(-100%);
+	
+	font-family: hero;
+	color: $bgbu;
+	background-color:rgba(black, 0.4);
+	padding: 2rem;
+	
+	
+	
+
+	// background-color:green;]
+
+		.hostal_check{
+			display: flex;
+			color:$bgro;
+			flex-direction: row;
+			
+			margin-left: 3rem;
+			font-family:robot;
+			align-items:center;
+			p{
+				font-size: 1rem;
+				color: $bgro;
+			}
+			.check_in{
+					input{
+					
+					
+					flex-flow: row-reverse nowrap;
+					position: relative;
+					z-index: 100;
+					font-size: 1.5rem;
+					right: 18px;
+					color: $fontopaco!important;
+					background:rgba(black, 0.2);
+					border-radius: 12px;
+					}
+				}
+			.check_out{
+					input{
+
+					
+					flex-flow: row-reverse nowrap;
+					position: relative;
+					z-index: 100;
+					font-size: 1.5rem;
+					right: 18px;
+					color: $fontopaco!important;
+					background: white;
+					left: 2px;
+					background:rgba(black, 0.2);
+					border-radius: 12px;
+					
+					margin-bottom: 2px;
+					}
+				}
+
+				
+				.btn_ser{
+					display: inline-block;
+					height: 30px;
+					
+					margin-left: 15px;
+					background-color:rgba(black,0.7);
+					border-radius: 20px 20px;
+					border-style: 0.1em solid white;
+					
+					color: gray!important;
+					font-family: hero;
+					font-size: 1rem;
+
+					&:hover{
+						cursor: pointer;
+						background-color: orange;
+						border-style: none;
+						box-shadow: $bgtranslucido 1px 1px 10px 0px!important;
+				}
+
+
+			}	
+
+		}
+			
+		
+	
+}
+
